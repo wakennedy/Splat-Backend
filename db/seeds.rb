@@ -1,4 +1,3 @@
-user1 = User.create(username: "Will Kennedy", color: "Blue")
 
 task1 = Task.create(name: "Trash", description: "Trash goes out Tuesday night.", category: "Chore")
 task2 = Task.create(name: "Dishes", description: "Empty the dishwasher on monday.", category: "Chore")
