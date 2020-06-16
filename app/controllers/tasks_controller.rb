@@ -13,6 +13,13 @@ class TasksController < ApplicationController
         task = Task.create(user_params)
         render json: task.to_json(except: [:created_at, :updated_at])
     end
+
+    def destroy
+        task = Task.find(params[:id])
+        task.destroy
+    end
+
+
     def user_params
         params.require(:task).permit(:name, :description, :category)
     end

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :user_tasks
-  resources :tasks, only: [:index, :show, :create]
+  resources :tasks, only: [:index, :show, :create, :destroy]
   resources :users
 
   post '/auth', to: 'auth#create'
